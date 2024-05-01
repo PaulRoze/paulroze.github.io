@@ -6,11 +6,10 @@ subtitle: 🙌 I speak 🇮🇱 🇺🇸 🇷🇺, like to 🏃‍♂️ 🏙️
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: IMG_4583.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Pronouns: he/him </p>
-    <p>Thats not me :) </p>
     <p>Location: Planet Earth, Solar System, Milky Way</p>
 
 news: false # includes a list of news items
