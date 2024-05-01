@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: 👾 Welcome to my code playground—where I'm the pilot, the pirate, and occasionally the prankster! Each repo is an episode of my GitHub adventure series. Enjoy the show!
+description: 👾 Welcome to my digital playground—where I captain wild code voyages and steer through nebulous bugs! Each repository is a thrilling episode in my ongoing GitHub adventure. Buckle up and enjoy the ride!
 nav: true
 nav_order: 4
 ---
