@@ -1,6 +1,14 @@
 github_users:
   - PaulRoze
+  - momowind-su
+  - antonbabenko
+  - geerlingguy
+
 
 github_repos:
   - PaulRoze/mezeze
-  - PaulRoze/AWS-Certified-Cloud-Practitioner
+  - momowind-su/Satoru-Gojo-NVIM
+  - github/gitignore
+  - antonbabenko/terraform-best-practices
+  - Netflix/chaosmonkey
+  - junegunn/fzf
