@@ -4,9 +4,9 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Pavel
-middle_name: 
+middle_name:
 last_name: Rozentsvet
-email:
+email: pavel.rozentsvet@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   🔧 Step into my digital workshop, where I craft dreams and conquer coding nightmares — just a typical day for an Infrastructure Developer wizard! 🌟💻
 footer_text: >

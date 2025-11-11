@@ -1,28 +1,235 @@
 {
   "basics": {
     "name": "Pavel Rozentsvet",
-    "label": "Infrastructure Developer",
+    "label": "DevOps Engineer",
     "image": "",
-    "email": "",
-    "phone": "",
+    "email": "pavel.rozentsvet@gmail.com",
+    "phone": "+972-54-752-7980",
     "url": "https://paulroze.github.io",
-    "summary": "Under construction - CV data being compiled",
+    "summary": "I am a dynamic and motivated Infrastructure Developer with extensive experience deploying, managing, and innovating within IT and services infrastructures.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "",
-      "countryCode": "",
-      "region": "Planet Earth, Solar System, Milky Way"
+      "city": "Givatayim",
+      "countryCode": "IL",
+      "region": "Tel Aviv District, Israel"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "pavelr",
+        "url": "https://linkedin.com/in/pavelr"
+      },
+      {
+        "network": "GitHub",
+        "username": "PaulRoze",
+        "url": "https://github.com/PaulRoze"
+      },
+      {
+        "network": "StackOverflow",
+        "username": "9457036",
+        "url": "https://stackoverflow.com/users/9457036"
+      }
+    ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "TAG Video Systems",
+      "position": "DevOps Engineer",
+      "url": "https://www.tagvs.com",
+      "startDate": "2024-06-01",
+      "endDate": "",
+      "summary": "Currently working as DevOps Engineer focusing on infrastructure development and cloud-native solutions.",
+      "highlights": []
+    },
+    {
+      "name": "Kaltura",
+      "position": "DevOps Engineer",
+      "url": "https://www.kaltura.com",
+      "startDate": "2022-08-01",
+      "endDate": "2024-05-01",
+      "summary": "Engineered and maintained robust video platforms using Kubernetes, emphasizing cloud-native applications and practices for scalable deployment and management.",
+      "highlights": [
+        "Enhanced deployment methodologies through collaboration with cross-DevOps teams, significantly reducing deployment times and improving system resilience",
+        "Fostered a culture of continuous improvement by working closely with R&D, integrating real-world feedback to optimize platform performance"
+      ]
+    },
+    {
+      "name": "Ribbon Communications",
+      "position": "PaaS Infrastructure Developer",
+      "url": "https://www.ribboncommunications.com",
+      "startDate": "2020-08-01",
+      "endDate": "2022-08-01",
+      "summary": "Led infrastructure modernization efforts and container orchestration initiatives.",
+      "highlights": [
+        "Successfully migrated Docker Swarm environments to Kubernetes, utilizing Helm charts and Helmfile for efficient infrastructure management",
+        "Managed virtual server environments using Proxmox, VMware, and libvirt (virsh, virt-manager), enhancing system robustness",
+        "Handled documentation and knowledge transfer"
+      ]
+    },
+    {
+      "name": "ECI Telecom",
+      "position": "Infrastructure Team Leader",
+      "url": "https://www.ecitele.com",
+      "startDate": "2019-07-01",
+      "endDate": "2020-08-01",
+      "summary": "Led a team of experienced developers in re-architecting and redesigning mission-critical services interacting with real-time events.",
+      "highlights": [
+        "Spearheaded OpenStack private cloud and automated infrastructure provisioning with Ansible",
+        "Proficient in all SDLCs within an agile-oriented environment"
+      ]
+    },
+    {
+      "name": "ECI Telecom",
+      "position": "NFV Infrastructure Engineer",
+      "url": "https://www.ecitele.com",
+      "startDate": "2017-11-01",
+      "endDate": "2019-07-01",
+      "summary": "Designed, developed, tested, documented, and analyzed modules or features for software systems and products.",
+      "highlights": [
+        "Executed implementation according to project priorities and plans",
+        "Employed a meticulous approach to design and development process, ensuring comprehensive testing and documentation"
+      ]
+    },
+    {
+      "name": "Amdocs",
+      "position": "Linux System Administrator",
+      "url": "https://www.amdocs.com",
+      "startDate": "2013-04-01",
+      "endDate": "2017-11-01",
+      "summary": "Responsible for daily operations and maintenance of Linux servers, ensuring system stability and reliability.",
+      "highlights": [
+        "Performed regular backups and system monitoring to support uninterrupted service and quick recovery",
+        "Provided first-level troubleshooting for system issues, effectively identifying and escalating complex problems"
+      ]
+    }
+  ],
   "volunteer": [],
-  "education": [],
+  "education": [
+    {
+      "institution": "Sapir College",
+      "location": "Israel",
+      "url": "https://www.sapir.ac.il/",
+      "area": "Industrial Management - Information Processes",
+      "studyType": "Bachelor of Arts (BA)",
+      "startDate": "2013-01-01",
+      "endDate": "2018-12-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "John Bryce Training",
+      "location": "Israel",
+      "url": "",
+      "area": "Computer/Information Technology Administration and Management",
+      "studyType": "RHCSA & RHCE",
+      "startDate": "2013-01-01",
+      "endDate": "2013-12-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "John Bryce Training",
+      "location": "Israel",
+      "url": "",
+      "area": "Computer/Information Technology Administration and Management",
+      "studyType": "MCITP",
+      "startDate": "2010-01-01",
+      "endDate": "2011-12-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Ort Henri Ronson",
+      "location": "Israel",
+      "url": "",
+      "area": "Programming & Electronics Trend",
+      "studyType": "Diploma",
+      "startDate": "1998-01-01",
+      "endDate": "2005-12-01",
+      "score": "",
+      "courses": []
+    }
+  ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "TAG Admin Certification",
+      "date": "",
+      "issuer": "TAG Video Systems",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Ansible: Setup, Configure, and AdHoc Commands Deep Dive",
+      "date": "",
+      "issuer": "",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "RHCSA (Red Hat Certified System Administrator)",
+      "date": "2013-01-01",
+      "issuer": "Red Hat",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "RHCE (Red Hat Certified Engineer)",
+      "date": "2013-01-01",
+      "issuer": "Red Hat",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    }
+  ],
   "publications": [],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Cloud & Container Orchestration",
+      "level": "Expert",
+      "icon": "fa-solid fa-cloud",
+      "keywords": [
+        "Kubernetes",
+        "Docker",
+        "Helm",
+        "Azure",
+        "Alibaba Cloud",
+        "OpenStack"
+      ]
+    },
+    {
+      "name": "Infrastructure as Code",
+      "level": "Expert",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Ansible",
+        "Terraform",
+        "Helmfile"
+      ]
+    },
+    {
+      "name": "System Administration",
+      "level": "Expert",
+      "icon": "fa-solid fa-server",
+      "keywords": [
+        "Linux",
+        "Proxmox",
+        "VMware",
+        "libvirt"
+      ]
+    },
+    {
+      "name": "DevOps Practices",
+      "level": "Expert",
+      "icon": "fa-solid fa-infinity",
+      "keywords": [
+        "CI/CD",
+        "Agile",
+        "Cloud-Native Applications",
+        "Infrastructure Automation"
+      ]
+    }
+  ],
   "languages": [
     {
       "language": "Hebrew",
@@ -31,25 +238,30 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Full professional proficiency",
       "icon": ""
     },
     {
       "language": "Russian",
-      "fluency": "Fluent",
+      "fluency": "Limited working proficiency",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Running",
+      "name": "Running & Fitness",
       "icon": "fa-solid fa-running",
-      "keywords": ["Urban running", "Music"]
+      "keywords": ["Urban running", "Music while running"]
     },
     {
-      "name": "Food",
+      "name": "Culinary Exploration",
       "icon": "fa-solid fa-utensils",
-      "keywords": ["Foodie", "Culinary exploration"]
+      "keywords": ["Foodie", "International cuisine"]
+    },
+    {
+      "name": "Technology & Innovation",
+      "icon": "fa-solid fa-microchip",
+      "keywords": ["Cloud technologies", "Infrastructure optimization", "Open source"]
     }
   ],
   "references": [],

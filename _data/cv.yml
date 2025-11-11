@@ -3,12 +3,130 @@
   contents:
     - name: Full Name
       value: Pavel Rozentsvet
+    - name: Location
+      value: Givatayim, Tel Aviv District, Israel
+    - name: Email
+      value: pavel.rozentsvet@gmail.com
+    - name: Phone
+      value: +972-54-752-7980
     - name: Languages
-      value: Hebrew, English, Russian
-    - name: Interests
-      value: Running, Music, Food
+      value: Hebrew (Native), English (Full Professional), Russian (Limited Working)
 
-- title: Note
+- title: Education
+  type: time_table
+  contents:
+    - title: Bachelor of Arts (BA)
+      institution: Sapir College, Israel
+      year: 2013 - 2018
+      description:
+        - Industrial Management - Information Processes
+    - title: RHCSA & RHCE
+      institution: John Bryce Training, Israel
+      year: 2013
+      description:
+        - Red Hat Certified System Administrator
+        - Red Hat Certified Engineer
+    - title: MCITP
+      institution: John Bryce Training, Israel
+      year: 2010 - 2011
+      description:
+        - Computer/Information Technology Administration and Management
+    - title: Diploma
+      institution: Ort Henri Ronson, Israel
+      year: 1998 - 2005
+      description:
+        - Programming & Electronics Trend
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: DevOps Engineer
+      institution: TAG Video Systems, Tel Aviv-Yafo, Israel
+      year: 2024 - Present
+      description:
+        - Currently working as DevOps Engineer focusing on infrastructure development and cloud-native solutions
+
+    - title: DevOps Engineer
+      institution: Kaltura, Israel
+      year: 2022 - 2024
+      description:
+        - Engineered and maintained robust video platforms using Kubernetes, emphasizing cloud-native applications and practices for scalable deployment and management
+        - Enhanced deployment methodologies and tools through collaboration with cross-DevOps teams, significantly reducing deployment times and improving system resilience
+        - Fostered a culture of continuous improvement by working closely with R&D, integrating real-world feedback to optimize platform performance
+
+    - title: PaaS Infrastructure Developer
+      institution: Ribbon Communications, Israel
+      year: 2020 - 2022
+      description:
+        - Successfully migrated Docker Swarm environments to Kubernetes, utilizing Helm charts and Helmfile for efficient infrastructure management
+        - Managed virtual server environments using Proxmox, VMware, and libvirt (virsh, virt-manager), enhancing system robustness
+        - Handled documentation and knowledge transfer
+
+    - title: Infrastructure Team Leader
+      institution: ECI Telecom, Be'er Sheva Area, Israel
+      year: 2019 - 2020
+      description:
+        - Led a team of experienced developers in re-architecting and redesigning mission-critical services interacting with real-time events
+        - Spearheaded OpenStack private cloud and automated infrastructure provisioning with Ansible
+        - Proficient in all SDLCs within an agile-oriented environment
+
+    - title: NFV Infrastructure Engineer
+      institution: ECI Telecom, Omer, Israel
+      year: 2017 - 2019
+      description:
+        - Designed, developed, tested, documented, and analyzed modules or features for software systems and products
+        - Executed implementation according to project priorities and plans
+        - Employed a meticulous approach to design and development process, ensuring comprehensive testing and documentation
+
+    - title: Linux System Administrator
+      institution: Amdocs, Israel
+      year: 2013 - 2017
+      description:
+        - Responsible for daily operations and maintenance of Linux servers, ensuring system stability and reliability
+        - Performed regular backups and system monitoring to support uninterrupted service and quick recovery in case of failures
+        - Provided first-level troubleshooting for system issues, effectively identifying and escalating complex problems to enhance resolution times
+
+- title: Certifications
+  type: time_table
+  contents:
+    - year: 2024
+      items:
+        - TAG Admin Certification
+    - year: 2013
+      items:
+        - Red Hat Certified System Administrator (RHCSA)
+        - Red Hat Certified Engineer (RHCE)
+        - Ansible - Setup, Configure, and AdHoc Commands Deep Dive
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Cloud & Container Orchestration
+      items:
+        - Kubernetes, Docker, Helm
+        - Azure, Alibaba Cloud, OpenStack
+        - Cloud-native application deployment
+    - title: Infrastructure as Code
+      items:
+        - Ansible, Terraform
+        - Helmfile for Kubernetes management
+        - Automated infrastructure provisioning
+    - title: System Administration
+      items:
+        - Linux (RHEL, Ubuntu, CentOS)
+        - Virtualization (Proxmox, VMware, libvirt)
+        - System monitoring and maintenance
+    - title: DevOps Practices
+      items:
+        - CI/CD pipelines
+        - Agile methodologies
+        - Infrastructure automation
+        - Migration and modernization strategies
+
+- title: Other Interests
   type: list
   contents:
-    - CV content is currently under construction. Please check back soon!
+    - Running and urban fitness while listening to music
+    - Culinary exploration and international cuisine
+    - Cloud technologies and infrastructure optimization
+    - Open source contributions
