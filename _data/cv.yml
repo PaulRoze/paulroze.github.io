@@ -2,96 +2,127 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Pavel Rozentsvet
+    - name: Location
+      value: Planet Earth, Solar System, Milky Way
     - name: Languages
-      value: English, German
+      value: Hebrew (Native), English (Full Professional), Russian (Limited Working)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelor of Arts (BA)
+      institution: Sapir College, Israel
+      year: 2013 - 2018
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Industrial Management - Information Processes
+    - title: RHCSA & RHCE
+      institution: John Bryce Training, Israel
+      year: 2013
       description:
-        - Description 1.
-        - Description 2.
+        - Red Hat Certified System Administrator
+        - Red Hat Certified Engineer
+    - title: MCITP
+      institution: John Bryce Training, Israel
+      year: 2010 - 2011
+      description:
+        - Computer/Information Technology Administration and Management
+    - title: Diploma
+      institution: Ort Henri Ronson, Israel
+      year: 1998 - 2005
+      description:
+        - Programming & Electronics Trend
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: DevOps Engineer
+      institution: TAG Video Systems, Tel Aviv-Yafo, Israel
+      year: 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Currently working as DevOps Engineer focusing on infrastructure development and cloud-native solutions
+
+    - title: DevOps Engineer
+      institution: Kaltura, Israel
+      year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Engineered and maintained robust video platforms using Kubernetes, emphasizing cloud-native applications and practices for scalable deployment and management
+        - Enhanced deployment methodologies and tools through collaboration with cross-DevOps teams, significantly reducing deployment times and improving system resilience
+        - Fostered a culture of continuous improvement by working closely with R&D, integrating real-world feedback to optimize platform performance
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: PaaS Infrastructure Developer
+      institution: Ribbon Communications, Israel
+      year: 2020 - 2022
       description:
+        - Successfully migrated Docker Swarm environments to Kubernetes, utilizing Helm charts and Helmfile for efficient infrastructure management
+        - Managed virtual server environments using Proxmox, VMware, and libvirt (virsh, virt-manager), enhancing system robustness
+        - Handled documentation and knowledge transfer
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Infrastructure Team Leader
+      institution: ECI Telecom, Be'er Sheva Area, Israel
+      year: 2019 - 2020
+      description:
+        - Led a team of experienced developers in re-architecting and redesigning mission-critical services interacting with real-time events
+        - Spearheaded OpenStack private cloud and automated infrastructure provisioning with Ansible
+        - Proficient in all SDLCs within an agile-oriented environment
 
-- title: Open Source Projects
+    - title: NFV Infrastructure Engineer
+      institution: ECI Telecom, Omer, Israel
+      year: 2017 - 2019
+      description:
+        - Designed, developed, tested, documented, and analyzed modules or features for software systems and products
+        - Executed implementation according to project priorities and plans
+        - Employed a meticulous approach to design and development process, ensuring comprehensive testing and documentation
+
+    - title: Linux System Administrator
+      institution: Amdocs, Israel
+      year: 2013 - 2017
+      description:
+        - Responsible for daily operations and maintenance of Linux servers, ensuring system stability and reliability
+        - Performed regular backups and system monitoring to support uninterrupted service and quick recovery in case of failures
+        - Provided first-level troubleshooting for system issues, effectively identifying and escalating complex problems to enhance resolution times
+
+- title: Certifications
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - TAG Admin Certification
+    - year: 2013
       items:
-        - Max Planck Medal
+        - Red Hat Certified System Administrator (RHCSA)
+        - Red Hat Certified Engineer (RHCE)
+        - Ansible - Setup, Configure, and AdHoc Commands Deep Dive
 
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Cloud & Container Orchestration
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Kubernetes, Docker, Helm
+        - Azure, Alibaba Cloud, OpenStack
+        - Cloud-native application deployment
+    - title: Infrastructure as Code
       items:
-        - Description 1.
-        - Description 2.
+        - Ansible, Terraform
+        - Helmfile for Kubernetes management
+        - Automated infrastructure provisioning
+    - title: System Administration
+      items:
+        - Linux (RHEL, Ubuntu, CentOS)
+        - Virtualization (Proxmox, VMware, libvirt)
+        - System monitoring and maintenance
+    - title: DevOps Practices
+      items:
+        - CI/CD pipelines
+        - Agile methodologies
+        - Infrastructure automation
+        - Migration and modernization strategies
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Running and urban fitness while listening to music
+    - Culinary exploration and international cuisine
+    - Cloud technologies and infrastructure optimization
+    - Open source contributions
