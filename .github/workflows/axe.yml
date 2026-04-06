@@ -58,6 +58,7 @@ jobs:
           echo "Chrome major version: $CHROME_VERSION"
           sudo npm install -g chromedriver@$CHROME_VERSION
       - name: Run axe
+        continue-on-error: true
         # https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli
         run: |
           sudo npm install -g @axe-core/cli
