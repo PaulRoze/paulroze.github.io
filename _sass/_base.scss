@@ -1109,3 +1109,71 @@ swiper-container {
     border-bottom: 2px solid var(--global-text-color);
   }
 }
+
+// Repository cards
+.repo-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 16px;
+  text-align: left;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+  }
+
+  .repo-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: var(--global-theme-color);
+
+    i {
+      font-size: 0.9rem;
+    }
+  }
+
+  .repo-card-name {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .repo-card-avatar {
+    border-radius: 50%;
+  }
+
+  .repo-card-description {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .repo-card-stats {
+    display: flex;
+    gap: 16px;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+  }
+
+  .repo-card-stat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .repo-card-language {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .repo-card-language-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3572a5;
+    display: inline-block;
+  }
+}

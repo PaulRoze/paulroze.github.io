@@ -550,6 +550,10 @@ third_party_libraries:
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
+  - data: github_user_PaulRoze
+    json: https://api.github.com/users/PaulRoze
+  - data: github_repo_PaulRoze_mezeze
+    json: https://api.github.com/repos/PaulRoze/mezeze
 jsonresume:
   - basics
   - work

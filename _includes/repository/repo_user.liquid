@@ -1,14 +1,29 @@
+{% assign data_key = 'github_user_' | append: include.username %}
+{% assign user_data = site.data[data_key] %}
+
 <div class="repo p-2 text-center">
   <a href="https://github.com/{{ include.username }}">
-    <img
-      class="repo-img-light w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&show_icons=true"
-    >
-    <img
-      class="repo-img-dark w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&show_icons=true"
-    >
+    {% if user_data %}
+      <div class="repo-card">
+        <div class="repo-card-header">
+          <img class="repo-card-avatar" src="{{ user_data.avatar_url }}" alt="{{ include.username }}" width="20" height="20">
+          <span class="repo-card-name">{{ user_data.name | default: include.username }}</span>
+        </div>
+        {% if user_data.bio %}
+          <p class="repo-card-description">{{ user_data.bio }}</p>
+        {% endif %}
+        <div class="repo-card-stats">
+          <span class="repo-card-stat"> <i class="fa-solid fa-book-bookmark"></i> {{ user_data.public_repos | default: 0 }} repos </span>
+          <span class="repo-card-stat"> <i class="fa-solid fa-users"></i> {{ user_data.followers | default: 0 }} followers </span>
+        </div>
+      </div>
+    {% else %}
+      <div class="repo-card">
+        <div class="repo-card-header">
+          <i class="fa-solid fa-user"></i>
+          <span class="repo-card-name">{{ include.username }}</span>
+        </div>
+      </div>
+    {% endif %}
   </a>
 </div>
