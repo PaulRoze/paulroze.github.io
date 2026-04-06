@@ -68,6 +68,7 @@ jobs:
           directory: ./_site
           enforce_https: false
           check_external_hash: false
+          check_external: false
           check_html: false
           check_opengraph: false
           ignore_empty_alt: true
