@@ -188,46 +188,25 @@
       "name": "Cloud & Container Orchestration",
       "level": "Expert",
       "icon": "fa-solid fa-cloud",
-      "keywords": [
-        "Kubernetes",
-        "Docker",
-        "Helm",
-        "Azure",
-        "Alibaba Cloud",
-        "OpenStack"
-      ]
+      "keywords": ["Kubernetes", "Docker", "Helm", "Azure", "Alibaba Cloud", "OpenStack"]
     },
     {
       "name": "Infrastructure as Code",
       "level": "Expert",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Ansible",
-        "Terraform",
-        "Helmfile"
-      ]
+      "keywords": ["Ansible", "Terraform", "Helmfile"]
     },
     {
       "name": "System Administration",
       "level": "Expert",
       "icon": "fa-solid fa-server",
-      "keywords": [
-        "Linux",
-        "Proxmox",
-        "VMware",
-        "libvirt"
-      ]
+      "keywords": ["Linux", "Proxmox", "VMware", "libvirt"]
     },
     {
       "name": "DevOps Practices",
       "level": "Expert",
       "icon": "fa-solid fa-infinity",
-      "keywords": [
-        "CI/CD",
-        "Agile",
-        "Cloud-Native Applications",
-        "Infrastructure Automation"
-      ]
+      "keywords": ["CI/CD", "Agile", "Cloud-Native Applications", "Infrastructure Automation"]
     }
   ],
   "languages": [

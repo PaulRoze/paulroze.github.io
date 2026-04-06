@@ -52,7 +52,8 @@ The Docker container serves on port 8080 with live reload and auto-restarts on `
 ## Disabled Features
 
 These al-folio features are not in use but the infrastructure remains if needed later:
+
 - **Blog** — `_posts/` is empty, `_pages/blog.md` exists with `nav: false`
 - **Projects** — `_projects/` is empty, `_pages/projects.md` exists with `nav: false`
-- **Publications** — Jekyll Scholar plugin removed, `_bibliography/` is empty
+- **Publications** — Jekyll Scholar plugin kept (required by templates), `_bibliography/papers.bib` is empty
 - **News/Announcements** — `_news/` is empty, disabled in config
