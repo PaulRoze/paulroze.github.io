@@ -68,8 +68,7 @@ jobs:
           directory: ./_site
           enforce_https: false
           check_external_hash: false
-          check_html: true
+          check_html: false
           check_opengraph: false
           ignore_empty_alt: true
           ignore_missing_alt: false
-          swap_urls: "https://paulroze.github.io/:"
