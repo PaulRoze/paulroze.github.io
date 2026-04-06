@@ -1,0 +1,82 @@
+name: Validate data files
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "_data/**"
+      - "assets/json/**"
+      - "_config.yml"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "_data/**"
+      - "assets/json/**"
+      - "_config.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Validate YAML files
+        run: |
+          echo "Validating _config.yml..."
+          python -c "import yaml; yaml.safe_load(open('_config.yml'))" && echo "  OK _config.yml"
+
+          for f in _data/*.yml; do
+            if [ -f "$f" ]; then
+              python -c "import yaml; yaml.safe_load(open('$f'))" && echo "  OK $f"
+            fi
+          done
+
+      - name: Validate JSON files
+        run: |
+          for f in assets/json/*.json; do
+            if [ -f "$f" ]; then
+              python -c "import json; json.load(open('$f'))" && echo "  OK $f"
+            fi
+          done
+
+      - name: Validate YAML frontmatter in pages
+        run: |
+          python3 << 'SCRIPT'
+          import yaml, sys, glob
+
+          errors = 0
+          for pattern in ["_pages/*.md", "_posts/*.md", "_projects/*.md", "_news/*.md"]:
+              for f in glob.glob(pattern):
+                  with open(f) as fh:
+                      content = fh.read()
+                  if not content.startswith("---"):
+                      print(f"  FAIL {f}: missing frontmatter")
+                      errors += 1
+                      continue
+                  parts = content.split("---", 2)
+                  if len(parts) < 3:
+                      print(f"  FAIL {f}: malformed frontmatter")
+                      errors += 1
+                      continue
+                  try:
+                      yaml.safe_load(parts[1])
+                      print(f"  OK {f}")
+                  except yaml.YAMLError as e:
+                      print(f"  FAIL {f}: {e}")
+                      errors += 1
+
+          sys.exit(1 if errors else 0)
+          SCRIPT
