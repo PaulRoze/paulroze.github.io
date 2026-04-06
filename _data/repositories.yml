@@ -1,13 +1,5 @@
 github_users:
   - PaulRoze
-  - momowind-su
-  - antonbabenko
-  - geerlingguy
 
 github_repos:
   - PaulRoze/mezeze
-  - momowind-su/Satoru-Gojo-NVIM
-  - github/gitignore
-  - antonbabenko/terraform-best-practices
-  - Netflix/chaosmonkey
-  - junegunn/fzf

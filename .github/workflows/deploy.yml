@@ -60,14 +60,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.299.0
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
       - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
+        uses: fjogeleit/yaml-update-action@v0.16.1
         with:
           commitChange: false
           valueFile: "_config.yml"

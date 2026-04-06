@@ -85,14 +85,23 @@
 - title: Certifications
   type: time_table
   contents:
-    - year: 2024
+    - year: 2026
       items:
-        - TAG Admin Certification
+        - "Building with the Claude API — Anthropic"
+        - "Introduction to Agent Skills — Anthropic"
+        - "AI Fluency Framework & Foundations — Anthropic"
+        - "Claude 101 — Anthropic"
+        - "Claude Code in Action — Anthropic"
+    - year: 2025
+      items:
+        - "TAG Admin Certification — TAG Video Systems"
+    - year: 2019
+      items:
+        - "Ansible: Setup, Configure, and AdHoc Commands Deep Dive — Linux Academy"
     - year: 2013
       items:
         - Red Hat Certified System Administrator (RHCSA)
         - Red Hat Certified Engineer (RHCE)
-        - Ansible - Setup, Configure, and AdHoc Commands Deep Dive
 
 - title: Technical Skills
   type: nested_list

@@ -154,16 +154,51 @@
   "awards": [],
   "certificates": [
     {
+      "name": "Building with the Claude API",
+      "date": "2026-04-01",
+      "issuer": "Anthropic",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Introduction to Agent Skills",
+      "date": "2026-04-01",
+      "issuer": "Anthropic",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "AI Fluency Framework & Foundations",
+      "date": "2026-03-01",
+      "issuer": "Anthropic",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Claude 101",
+      "date": "2026-03-01",
+      "issuer": "Anthropic",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Claude Code in Action",
+      "date": "2026-03-01",
+      "issuer": "Anthropic",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
       "name": "TAG Admin Certification",
-      "date": "",
+      "date": "2025-07-01",
       "issuer": "TAG Video Systems",
       "url": "",
       "icon": "fa-solid fa-certificate"
     },
     {
       "name": "Ansible: Setup, Configure, and AdHoc Commands Deep Dive",
-      "date": "",
-      "issuer": "",
+      "date": "2019-06-01",
+      "issuer": "Linux Academy",
       "url": "",
       "icon": "fa-solid fa-certificate"
     },
