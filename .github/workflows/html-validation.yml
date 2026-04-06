@@ -1,0 +1,81 @@
+name: Validate HTML
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "!.github/workflows/**"
+      - "!lighthouse_results/**"
+      - "!CONTRIBUTING.md"
+      - "!CUSTOMIZE.md"
+      - "!FAQ.md"
+      - "!INSTALL.md"
+      - "!README.md"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "!.github/workflows/**"
+      - "!lighthouse_results/**"
+      - "!CONTRIBUTING.md"
+      - "!CUSTOMIZE.md"
+      - "!FAQ.md"
+      - "!INSTALL.md"
+      - "!README.md"
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v6
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1.299.0
+        with:
+          ruby-version: "3.2.2"
+          bundler-cache: true
+
+      - name: Update _config.yml ⚙️
+        uses: fjogeleit/yaml-update-action@v0.16.1
+        with:
+          commitChange: false
+          valueFile: "_config.yml"
+          changes: |
+            {
+              "giscus.repo": "${{ github.repository }}",
+              "baseurl": ""
+            }
+
+      - name: Install and Build 🔧
+        run: |
+          pip3 install --upgrade jupyter
+          export JEKYLL_ENV=production
+          bundle exec jekyll build --lsi
+
+      - name: Validate HTML 🔍
+        uses: anishathalye/proof-html@v2
+        with:
+          directory: ./_site
+          enforce_https: false
+          check_external_hash: false
+          check_html: true
+          check_opengraph: false
+          ignore_empty_alt: true
+          ignore_missing_alt: false
+          swap_urls: "https://paulroze.github.io/:"
