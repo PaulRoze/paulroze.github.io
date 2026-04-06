@@ -52,15 +52,9 @@ jobs:
           bundler-cache: true
 
       - name: Update _config.yml
-        uses: fjogeleit/yaml-update-action@v0.16.1
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          changes: |
-            {
-              "giscus.repo": "${{ github.repository }}",
-              "baseurl": ""
-            }
+        run: |
+          sed -i "s|^  repo:.*|  repo: ${{ github.repository }}|" _config.yml
+          sed -i "s|^baseurl:.*|baseurl: |" _config.yml
 
       - name: Install and Build
         run: |
