@@ -18,6 +18,9 @@ on:
       - "assets/json/**"
       - "_config.yml"
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest

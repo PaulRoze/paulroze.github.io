@@ -1,15 +1,38 @@
 name: Check for broken links on site
 
 on:
-  workflow_run:
-    workflows: [Deploy site]
-    types: [completed]
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.html"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!.github/workflows/lighthouse-badger.yml"
+      - "!lighthouse_results/**"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.html"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!.github/workflows/lighthouse-badger.yml"
+      - "!lighthouse_results/**"
+
+permissions:
+  contents: read
 
 jobs:
   check-links-on-site:
-    # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,6 +46,8 @@ jobs:
         run: |
           sed -i "s|^  repo:.*|  repo: ${{ github.repository }}|" _config.yml
           sed -i "s|^baseurl:.*|baseurl: |" _config.yml
+      - name: Install ImageMagick
+        run: sudo apt-get install -y imagemagick
       - name: Install and Build
         run: |
           pip3 install --upgrade jupyter
