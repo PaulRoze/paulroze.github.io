@@ -311,7 +311,7 @@ enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
-enable_masonry: true # enables automatic project cards arrangement
+enable_masonry: false # not needed — repos/projects pages hidden
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
@@ -483,27 +483,7 @@ third_party_libraries:
 
 jekyll_get_json:
   - data: resume
-    json: assets/json/resume.json # it can also be an url
-  - data: github_user_PaulRoze
-    json: https://api.github.com/users/PaulRoze
-  - data: github_user_momowind-su
-    json: https://api.github.com/users/momowind-su
-  - data: github_user_antonbabenko
-    json: https://api.github.com/users/antonbabenko
-  - data: github_user_geerlingguy
-    json: https://api.github.com/users/geerlingguy
-  - data: github_repo_PaulRoze_mezeze
-    json: https://api.github.com/repos/PaulRoze/mezeze
-  - data: github_repo_momowind-su_Satoru-Gojo-NVIM
-    json: https://api.github.com/repos/momowind-su/Satoru-Gojo-NVIM
-  - data: github_repo_github_gitignore
-    json: https://api.github.com/repos/github/gitignore
-  - data: github_repo_antonbabenko_terraform-best-practices
-    json: https://api.github.com/repos/antonbabenko/terraform-best-practices
-  - data: github_repo_Netflix_chaosmonkey
-    json: https://api.github.com/repos/Netflix/chaosmonkey
-  - data: github_repo_junegunn_fzf
-    json: https://api.github.com/repos/junegunn/fzf
+    json: assets/json/resume.json
 jsonresume:
   - basics
   - work
