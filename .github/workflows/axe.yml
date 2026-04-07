@@ -19,6 +19,9 @@ on:
         description: "URL to be checked (e.g.: blog/)"
         required: false
 
+permissions:
+  contents: read
+
 env:
   URL: ""
 
@@ -62,8 +65,10 @@ jobs:
       - name: Run axe
         continue-on-error: true
         # https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli
+        env:
+          AXE_URL: ${{ github.event.inputs.url || env.URL }}
         run: |
           sudo npm install -g @axe-core/cli
           sudo npm install -g http-server
           http-server _site/ &
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:8080/${{ github.event.inputs.url || env.URL }} --load-delay=1500 --exit
+          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver "http://localhost:8080/$AXE_URL" --load-delay=1500 --exit

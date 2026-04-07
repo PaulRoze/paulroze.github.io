@@ -28,6 +28,9 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!lighthouse_results/**"
 
+permissions:
+  contents: read
+
 jobs:
   check-links-on-site:
     runs-on: ubuntu-latest

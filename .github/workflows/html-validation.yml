@@ -38,6 +38,9 @@ on:
       - "!INSTALL.md"
       - "!README.md"
 
+permissions:
+  contents: read
+
 jobs:
   validate-html:
     runs-on: ubuntu-latest
