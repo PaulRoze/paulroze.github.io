@@ -55,6 +55,8 @@ jobs:
         run: |
           sed -i "s|^  repo:.*|  repo: ${{ github.repository }}|" _config.yml
           sed -i "s|^baseurl:.*|baseurl: |" _config.yml
+      - name: Install ImageMagick
+        run: sudo apt-get install -y imagemagick
 
       - name: Install and Build
         run: |
