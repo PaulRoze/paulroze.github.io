@@ -63,9 +63,8 @@ jobs:
 
       - name: Install and Build
         run: |
-          pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
-          bundle exec jekyll build --lsi
+          bundle exec jekyll build
 
       - name: Validate HTML
         continue-on-error: true

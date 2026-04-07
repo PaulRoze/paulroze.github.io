@@ -1,0 +1,192 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - generic [ref=e3]:
+        - link "Pavel Rozentsvet" [ref=e4] [cursor=pointer]:
+          - /url: //
+        - list [ref=e6]:
+          - listitem [ref=e7]:
+            - link "about" [ref=e8] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e9]:
+            - link "cv" [ref=e10] [cursor=pointer]:
+              - /url: /cv/
+          - listitem [ref=e11]:
+            - link "repositories (current)" [ref=e12] [cursor=pointer]:
+              - /url: /repositories/
+              - text: repositories
+              - generic [ref=e13]: (current)
+          - listitem [ref=e14]:
+            - button "" [ref=e15] [cursor=pointer]:
+              - generic [ref=e16]: 
+              - text:  
+    - progressbar [ref=e17]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - heading "repositories" [level=1] [ref=e21]
+        - paragraph [ref=e22]: Open-source projects and tools I've built or contributed to.
+      - article [ref=e23]:
+        - heading "GitHub users" [level=2] [ref=e24]
+        - generic [ref=e25]:
+          - link "PaulRoze Pavel Rozentsvet 🙌 I speak 🇮🇱 🇺🇸 🇷🇺, like to 🏃‍♂️ 🏙️ while 🎧 🎼 I'm a Foodie 🍴🥢  14 repos  6 followers" [ref=e27] [cursor=pointer]:
+            - /url: https://github.com/PaulRoze
+            - generic [ref=e28]:
+              - generic [ref=e29]:
+                - img "PaulRoze" [ref=e30]
+                - generic [ref=e31]: Pavel Rozentsvet
+              - paragraph [ref=e32]: 🙌 I speak 🇮🇱 🇺🇸 🇷🇺, like to 🏃‍♂️ 🏙️ while 🎧 🎼 I'm a Foodie 🍴🥢
+              - generic [ref=e33]:
+                - generic [ref=e34]:
+                  - generic [ref=e35]: 
+                  - text: 14 repos
+                - generic [ref=e36]:
+                  - generic [ref=e37]: 
+                  - text: 6 followers
+          - link "momowind-su Evgeney golovochov  5 repos  0 followers" [ref=e39] [cursor=pointer]:
+            - /url: https://github.com/momowind-su
+            - generic [ref=e40]:
+              - generic [ref=e41]:
+                - img "momowind-su" [ref=e42]
+                - generic [ref=e43]: Evgeney golovochov
+              - generic [ref=e44]:
+                - generic [ref=e45]:
+                  - generic [ref=e46]: 
+                  - text: 5 repos
+                - generic [ref=e47]:
+                  - generic [ref=e48]: 
+                  - text: 0 followers
+          - link "antonbabenko Anton Babenko AWS Community Hero / Terraform Influencer 🇺🇦🇳🇴 / compliance.tf  38 repos  5409 followers" [ref=e50] [cursor=pointer]:
+            - /url: https://github.com/antonbabenko
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - img "antonbabenko" [ref=e53]
+                - generic [ref=e54]: Anton Babenko
+              - paragraph [ref=e55]: AWS Community Hero / Terraform Influencer 🇺🇦🇳🇴 / compliance.tf
+              - generic [ref=e56]:
+                - generic [ref=e57]:
+                  - generic [ref=e58]: 
+                  - text: 38 repos
+                - generic [ref=e59]:
+                  - generic [ref=e60]: 
+                  - text: 5409 followers
+          - 'link "geerlingguy Jeff Geerling Father, author, developer, maker. Sometimes called \"an inflammatory enigma\". #stl #drupal #ansible #k8s #raspberrypi #crohns  312 repos  26681 followers" [ref=e62] [cursor=pointer]':
+            - /url: https://github.com/geerlingguy
+            - generic [ref=e63]:
+              - generic [ref=e64]:
+                - img "geerlingguy" [ref=e65]
+                - generic [ref=e66]: Jeff Geerling
+              - paragraph [ref=e67]: "Father, author, developer, maker. Sometimes called \"an inflammatory enigma\". #stl #drupal #ansible #k8s #raspberrypi #crohns"
+              - generic [ref=e68]:
+                - generic [ref=e69]:
+                  - generic [ref=e70]: 
+                  - text: 312 repos
+                - generic [ref=e71]:
+                  - generic [ref=e72]: 
+                  - text: 26681 followers
+        - separator [ref=e73]
+        - heading "GitHub Repositories" [level=2] [ref=e74]
+        - generic [ref=e75]:
+          - link " mezeze Who's your cloud-sidekick? It's Mezeze! This clever Bash script navigates the twists and turns of AWS and Kubernetes, crafting users, configuring CLI magic, updating kubeconfigs, and more. Plus, it's got a knack for summoning kubectl aliases and fzf, making cloud management feel like asking 'Who is this?' and always getting the right answer! 🌐🔮👤 Shell  4  1" [ref=e77] [cursor=pointer]:
+            - /url: https://github.com/PaulRoze/mezeze
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: 
+                - generic [ref=e81]: mezeze
+              - paragraph [ref=e82]: Who's your cloud-sidekick? It's Mezeze! This clever Bash script navigates the twists and turns of AWS and Kubernetes, crafting users, configuring CLI magic, updating kubeconfigs, and more. Plus, it's got a knack for summoning kubectl aliases and fzf, making cloud management feel like asking 'Who is this?' and always getting the right answer! 🌐🔮👤
+              - generic [ref=e83]:
+                - generic [ref=e84]: Shell
+                - generic [ref=e86]:
+                  - generic [ref=e87]: 
+                  - text: "4"
+                - generic [ref=e88]:
+                  - generic [ref=e89]: 
+                  - text: "1"
+          - link " nvim my configuration for neo vim Lua  1  2" [ref=e91] [cursor=pointer]:
+            - /url: https://github.com/momowind-su/Satoru-Gojo-NVIM
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - generic [ref=e94]: 
+                - generic [ref=e95]: nvim
+              - paragraph [ref=e96]: my configuration for neo vim
+              - generic [ref=e97]:
+                - generic [ref=e98]: Lua
+                - generic [ref=e100]:
+                  - generic [ref=e101]: 
+                  - text: "1"
+                - generic [ref=e102]:
+                  - generic [ref=e103]: 
+                  - text: "2"
+          - link " gitignore A collection of useful .gitignore templates  173327  82695" [ref=e105] [cursor=pointer]:
+            - /url: https://github.com/github/gitignore
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108]: 
+                - generic [ref=e109]: gitignore
+              - paragraph [ref=e110]: A collection of useful .gitignore templates
+              - generic [ref=e111]:
+                - generic [ref=e112]:
+                  - generic [ref=e113]: 
+                  - text: "173327"
+                - generic [ref=e114]:
+                  - generic [ref=e115]: 
+                  - text: "82695"
+          - link " terraform-best-practices Terraform Best Practices free ebook translated into 🇬🇧🇦🇪🇧🇦🇧🇷🇫🇷🇬🇪🇩🇪🇬🇷🇮🇱🇮🇳🇮🇩🇮🇹🇯🇵🇰🇷🇵🇱🇷🇴🇨🇳🇪🇸🇹🇷🇺🇦🇵🇰 HCL  2441  535" [ref=e117] [cursor=pointer]:
+            - /url: https://github.com/antonbabenko/terraform-best-practices
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - generic [ref=e120]: 
+                - generic [ref=e121]: terraform-best-practices
+              - paragraph [ref=e122]: Terraform Best Practices free ebook translated into 🇬🇧🇦🇪🇧🇦🇧🇷🇫🇷🇬🇪🇩🇪🇬🇷🇮🇱🇮🇳🇮🇩🇮🇹🇯🇵🇰🇷🇵🇱🇷🇴🇨🇳🇪🇸🇹🇷🇺🇦🇵🇰
+              - generic [ref=e123]:
+                - generic [ref=e124]: HCL
+                - generic [ref=e126]:
+                  - generic [ref=e127]: 
+                  - text: "2441"
+                - generic [ref=e128]:
+                  - generic [ref=e129]: 
+                  - text: "535"
+          - link " chaosmonkey Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures. Go  16796  1285" [ref=e131] [cursor=pointer]:
+            - /url: https://github.com/Netflix/chaosmonkey
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]: 
+                - generic [ref=e135]: chaosmonkey
+              - paragraph [ref=e136]: Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures.
+              - generic [ref=e137]:
+                - generic [ref=e138]: Go
+                - generic [ref=e140]:
+                  - generic [ref=e141]: 
+                  - text: "16796"
+                - generic [ref=e142]:
+                  - generic [ref=e143]: 
+                  - text: "1285"
+          - 'link " fzf :cherry_blossom: A command-line fuzzy finder Go  79297  2751" [ref=e145] [cursor=pointer]':
+            - /url: https://github.com/junegunn/fzf
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - generic [ref=e148]: 
+                - generic [ref=e149]: fzf
+              - paragraph [ref=e150]:
+                - img ":cherry_blossom:" [ref=e151]
+                - text: A command-line fuzzy finder
+              - generic [ref=e152]:
+                - generic [ref=e153]: Go
+                - generic [ref=e155]:
+                  - generic [ref=e156]: 
+                  - text: "79297"
+                - generic [ref=e157]:
+                  - generic [ref=e158]: 
+                  - text: "2751"
+  - contentinfo [ref=e159]:
+    - generic [ref=e160]:
+      - text: © Copyright 2026 Pavel Rozentsvet. Powered by
+      - link "Jekyll" [ref=e161] [cursor=pointer]:
+        - /url: https://jekyllrb.com/
+      - text: with
+      - link "al-folio" [ref=e162] [cursor=pointer]:
+        - /url: https://github.com/alshedivat/al-folio
+      - text: theme. Hosted by
+      - link "GitHub Pages" [ref=e163] [cursor=pointer]:
+        - /url: https://pages.github.com/
+      - text: .
