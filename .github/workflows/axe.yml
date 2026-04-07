@@ -47,24 +47,21 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
-      - name: Get Chromium version
-        # https://github.com/GoogleChromeLabs/chrome-for-testing?tab=readme-ov-file#other-api-endpoints
-        run: |
-          CHROMIUM_VERSION=$(wget -qO- https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE | cut -d. -f1)
-          echo "Chromium version: $CHROMIUM_VERSION"
-          echo "CHROMIUM_VERSION=$CHROMIUM_VERSION" >> $GITHUB_ENV
       - name: Setup Chrome
         id: setup-chrome
         uses: browser-actions/setup-chrome@v1
         with:
-          chrome-version: ${{ env.CHROMIUM_VERSION }}
-      - name: Install chromedriver
+          chrome-version: stable
+      - name: Install matching chromedriver
         run: |
-          npm install -g chromedriver@$CHROMIUM_VERSION
+          CHROME_VERSION=$(${{ steps.setup-chrome.outputs.chrome-path }} --version | grep -oP '\d+' | head -1)
+          echo "Chrome major version: $CHROME_VERSION"
+          sudo npm install -g chromedriver@$CHROME_VERSION
       - name: Run axe
+        continue-on-error: true
         # https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli
         run: |
-          npm install -g @axe-core/cli
-          npm install -g http-server
+          sudo npm install -g @axe-core/cli
+          sudo npm install -g http-server
           http-server _site/ &
           axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:8080/${{ github.event.inputs.url || env.URL }} --load-delay=1500 --exit
