@@ -1,0 +1,2 @@
+# Bot protection returns 403/5xx to CI runners; link is valid.
+^https://(www\.)?tagvs\.com
